@@ -4,10 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class DemoModelApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(DemoApplication.class, args);
+    SpringApplication.run(DemoModelApplication.class, args).close();
+
+    System.out.println("Let's inspect the beans provided by Spring Boot:");
   }
 
 }
